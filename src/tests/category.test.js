@@ -39,7 +39,7 @@ test("GET ->'URL_BASE', should return status code 200 and res.body.length === 1"
 })
 
 
-test("DELETE ->'URL_BASE/:id', should return staus code 204", async () => { 
+test("DELETE ->'URL_BASE/:id', should return status code 204", async () => { 
   const res = await request(app)
     .delete(`${BASE_URL}/${categoryId}`)
     .set("Authorization", `Bearer ${TOKEN}`)
